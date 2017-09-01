@@ -4,6 +4,6 @@
 ?>
 
 <span style="text-align:right ;width:90%; display:block; margin-bottom:5px;">
-	<a href="uedit.php"><img src="res/images/1.jpg" class="imagedel"/><?php echo $_SESSION["fn"];
+	<a href="uedit.php"><img src="1.jpg" class="imagedel"/><?php echo $_SESSION["fn"];
 	?></a>, [ <a href="logout.php">logout</a> ] 
 </span>
