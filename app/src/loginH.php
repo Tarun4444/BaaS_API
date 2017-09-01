@@ -21,7 +21,7 @@ $pwd=$_POST["pwd"];
 			
 			if($row["user_type"]=="admin")
 			{
-				header("location: home.php");
+				header("location: admin/home.php");
 			}
 			else
 			{

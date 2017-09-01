@@ -64,7 +64,7 @@
                             <div class="art-Post-body">
                         <div class="art-Post-inner">
                             <h2 class="art-PostHeaderIcon-wrapper">
-                                <img src="welcome.jpg" width="9" height="9" alt="PostHeaderIcon" />
+                                <img src="res/images/welcome.jpg" width="9" height="9" alt="PostHeaderIcon" />
                                 <span class="art-PostHeader">Who uses our site?</span>
                             </h2>
                             <div class="art-PostContent">

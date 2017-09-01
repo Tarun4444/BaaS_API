@@ -10,8 +10,8 @@ ob_start();
 <script type="text/javascript" src="script.js"></script>
 
     <link rel="stylesheet" href="res/style.css" type="text/css" media="screen" />
-    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
-    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 6]><link rel="stylesheet" href="res/style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="res/style.ie7.css" type="text/css" media="screen" /><![endif]-->
 
 </head>
 
