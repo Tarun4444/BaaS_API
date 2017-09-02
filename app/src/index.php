@@ -216,13 +216,14 @@ The various questions are like how to setup the languages, datatypes etc.
                                     <div class="art-BlockContent-cc"></div>
                                     <div class="art-BlockContent-body">
                                       <marquee direction="up" onmouseover="stop()" onmouseout="start()" scrollamount="1" scrolldelay="1" style="height:400px;">  <div>
-                                                          <p><b>march 8 , 2017</b><br/>
-                                                          new notification here , our group is the best , do not argue lest you shall be smitten<br/>
-                                                          
+                                                          <p><b>september 20,2017</b><br/>
+								"NOTIFICATION 1 :"
+                                                           our group is the best <br/>
 
-                                                          <p><b>Apr 24, 2012</b><br/>
-                                                          <br/>
-                                                          <a href="javascript:void(0)">Read more...</a></p>
+                                                          <p><b>october 26, 2017</b><br/>
+								"NOTIFICATION 2 :"
+                                                          operating system discussion thread is started<br/>
+                                                          </p>
                                                           </div>
 		</marquee>
                                     </div>
