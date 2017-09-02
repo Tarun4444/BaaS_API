@@ -3,7 +3,7 @@ session_start();
 require("header.php")
 ?>
 <h2>Privacy Policy</h2>
-<p align="justify">This privacy policy sets out how <b>Technical Discussion Forum</b> uses and protects any information that you give TDF when you use this website. TDF is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement. TDF may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes. This policy is effective from 31th of March, 2012.</p>
+<p align="justify">This privacy policy sets out how <b>Huddler</b> uses and protects any information that you give when you use this website. We are committed to ensure that your privacy is protected. </p>
 <h2>What we collect</h2>
 <p>We may collect the following information:</p>
 <ul >
@@ -17,12 +17,10 @@ require("header.php")
 <div>demographic information such as postcode, preferences </div>
 </li>
 <li type="disc">
-<div>other information relevant to customer surveys and/or offers</div>
+<div>other information relevant to student</div>
 </li>
 </ul>
 <h2>What we do with the information we gather</h2>
-<p align="justify">We require this information to understand your needs and provide you with a better service, and in particular for the following reasons:</p>
-<ul>
 <li type="disc">
 <div>Internal record keeping.</div>
 </li>
