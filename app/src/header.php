@@ -46,9 +46,7 @@ ob_start();
                 	<div class="r"></div>
                 	<ul class="art-menu">
                 		<li><a href="uhome.php" id="auhome"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li>
-                		<li><a href="aboutus.php" id="aaboutus"><span class="l"></span><span class="r"></span><span class="t">About</span></a>
-
-                		</li>
+                		
 
                 		<li><a href="forum.php" id="aforum"><span class="l" ></span><span class="r"></span><span class="t">Forum</span></a>
 
