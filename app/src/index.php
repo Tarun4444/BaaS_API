@@ -27,7 +27,7 @@
                             <div class="art-PostContent">
 
 
-<p align="justify"><b>The ONLINE DISCUSSION FORUM(ODS)</b> is a discussion forum that gives information about various programming languages, general knowledge related questions, information related to Asp.net,Vb.net,Php,Os related questions ,etc. </p>
+<p align="justify"><b>HUDDLER</b> is a discussion forum that gives information about various programming languages, general knowledge related questions, information related to Asp.net,Vb.net,Php,Os related questions ,etc. </p>
 
 <p align="justify">This forum is useful for the beginners to get information  related to  various topics. There is a centralized database in which all the information is managed. The administrator acts as the highest authority and has the rights to update the database. There are also connected user who acts as an intermediate user who can also answer the questions of the end-user if they know it. The intermediate user can also cache the information provided by the administrator to the end-user. This cached information is useful when the same question is repeated some another user , then the intermediate user can get the information from cache memory and reply to the end-user. This reduces the response time.</p>
 
@@ -221,12 +221,7 @@ The various questions are like how to setup the languages, datatypes etc.
                                                           
 
                                                           <p><b>Apr 24, 2012</b><br/>
-                                                          Aliquam sit amet felis. Mauris semper,
-                                                          velit semper laoreet dictum, quam
-                                                          diam dictum urna, nec placerat elit
-                                                          nisl in quam. Etiam augue pede,
-                                                          molestie eget, rhoncus at, convallis
-                                                          ut, eros. Aliquam pharetra.<br/>
+                                                          <br/>
                                                           <a href="javascript:void(0)">Read more...</a></p>
                                                           </div>
 		</marquee>
