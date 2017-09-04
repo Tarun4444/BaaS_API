@@ -2,7 +2,7 @@
 error_reporting(1);
 	function ExecuteQuery ($SQL)
 	{	
-		$con=mysql_connect ("localhost", "root","");
+		$con=mysqli_connect ("localhost", "root","");
 		mysql_select_db ("tech_forum",$con);
 		
 		$rows = mysql_query ($SQL);
