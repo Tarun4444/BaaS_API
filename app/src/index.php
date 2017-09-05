@@ -157,21 +157,21 @@ The various questions are like how to setup the languages, datatypes etc.
 									return false;
 								}
 							        else if(f.pwd.value=="")
-															{
-																document.getElementById("a").innerHTML="Please,Enter the password";
+								{
+									document.getElementById("a").innerHTML="Please,Enter the password";
 																//alert("Please,Enter Your Password")
-																f.pwd.focus()
-																return false;
+									f.pwd.focus()
+									return false;
+								}
 
-																}
-
-															else
-															return true;
+									else
+									return true;
 														
 							}
 
 
-												</script>
+					</script>
+
 <form action="loginH.php" method="POST" onsubmit="return check(this)">
 <table>
 <tr><td>User Id:</td></tr><tr><td><input type="text" name="uid"><span id='spuid' style="color: red;"></span></td></tr>

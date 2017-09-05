@@ -94,11 +94,11 @@
         
          if(request.status===200) 
           {
- 		console.log("ola");
+ 		windows.alert(55);
           }
           else 
           { 
-            console.log("dola");
+           windows.alert(50); 
           }
      }               
    
