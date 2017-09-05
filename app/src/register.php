@@ -176,7 +176,7 @@
 </script>
 
 <h1>Register User</h1>
-<form action="registerH.php" method="post" onsubmit="return check(this)" enctype="multipart/form-data" name = "form1">
+<form action="register.php" method="post" onsubmit="return check(this)" enctype="multipart/form-data" name = "form1">
 <table>
 <tr><td>Username</td><td>:</td><td><input type="text" name="u_name" ><span id='a' style="color: red;"></span></td></tr>
 <tr><td>Fullname</td><td>:</td><td><input type="text" name="f_name"><span id='b' style="color: red;"></span></td></tr>
