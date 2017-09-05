@@ -141,9 +141,39 @@
 			return true;
 	}
 </script>
+<script>
 
-
-
+    var signup_btn = document.getElementById("signup_btn");
+   
+    signup_btn.onclick= function(){
+   var request= new XMLHttpRequest();
+   
+    request.onreadystatechange= function(){
+   
+      if(request.readyState===XMLHttpRequest.DONE){
+        
+         if(request.status===200) 
+          {
+ 
+          }
+          else 
+          { 
+            
+            document.getElementById("signup_btn").value= "Sign up";
+          }
+     }               
+   
+}     
+    var username= document.getElementById("a").value;
+    var password= document.getElementById("b").value;
+    
+    request.open('POST', " https://auth.bewitch58.hasura-app.io/signup", true);
+    request.setRequestHeader('Content-type','application/json');
+    request.send(JSON.stringify({username:username,password:password})); 
+    
+}; 
+       
+</script>
 
 <h1>Register User</h1>
 <form action="registerH.php" method="post" onsubmit="return check(this)" enctype="multipart/form-data" name = "form1">
@@ -159,6 +189,6 @@
 <tr><td>State</td><td>:</td><td><input type="text" name="sta"><span id='g' style="color: red;"></span></td></tr>
 <tr><td>Country</td><td>:</td><td><input type="text" name="cou"><span id='h' style="color: red;"></span></td></tr>
 
-<tr><td><input type="submit" value="Submit"></td><td></td><td><input type="reset" value="Reset"></td></tr></table></form>
+<tr><td><input type="submit" value="Submit" id="signup_btn"></td><td></td><td><input type="reset" value="Reset"></td></tr></table></form>
 
 <?php require("footer.php"); ?>

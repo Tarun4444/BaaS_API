@@ -1,7 +1,6 @@
 <?php
-error_reporting(1);
-	function ExecuteQuery ($SQL)
-	{	
+/*error_reporting(1);
+	/*function ExecuteQuery ($SQL){	
 		$con=mysqli_connect ("http://sql.default/", "bewitch58","");
 		mysql_select_db ("tech_forum",$con);
 		
@@ -12,8 +11,7 @@ error_reporting(1);
 		return $rows;
 	}
 	
-	function ExecuteNonQuery ($SQL)
-	{
+	function ExecuteNonQuery ($SQL){
 		$con=mysqli_connect ("http://sql.default/", "bewitch58","");
 		mysql_select_db ("tech_forum",$con);
 		
@@ -22,5 +20,5 @@ error_reporting(1);
 		mysql_close ();
 		
 		return $result;
-	}
+	}*/
 ?>
