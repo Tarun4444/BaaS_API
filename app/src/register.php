@@ -122,7 +122,7 @@
 		<tr><td>Password</td><td>:</td><td><input type="password" name="pwd"><span id='c' style="color: red;"></span></td></tr>
 		<tr><td>E_Mail</td><td>:</td><td><input type="text" name="e_mail"><span id='d' style="color: red;"></span></td></tr>
 		<tr><td>Date Of Birth</td><td>:</td><td><input type="text" name="dob" ><span id='e' style="color: red;"></span></td></tr>
-		<tr><td><input type="submit" value="Submit" id="signup_btn"></td><td></td><td><input type="reset" value="Reset"></td></tr>
+		<tr><td><input type="submit" value="Submit"><span id="signup_btn"></span></td><td></td><td><input type="reset" value="Reset"></td></tr>
 </table>
 </form>
 
