@@ -7,7 +7,7 @@ ob_start();
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
 <title>HUDDLER</title>
 
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="res/script.js"></script>
 
     <link rel="stylesheet" href="res/style.css" type="text/css" media="screen" />
     <!--[if IE 6]><link rel="stylesheet" href="res/style.ie6.css" type="text/css" media="screen" /><![endif]-->
