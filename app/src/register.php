@@ -7,11 +7,6 @@
 		form1.f_name.value == "" ||
 		form1.pwd.value == "" ||
 		form1.e_mail.value == ""||
-		form1.gender.value == ""||
-		form1.dob.value == ""||
-		form1.add.value == ""||
-		form1.sta.value == "" ||
-		form1.cou.value == "" )
 		{
 		
 			if (form1.u_name.value == "")
@@ -85,7 +80,7 @@
     var signup_btn = document.getElementById("signup_btn");
    
     signup_btn.onclick= function(){
-	windows.alert(55);
+	//windows.alert(55);
  	
     var request= new XMLHttpRequest();
    
@@ -116,14 +111,14 @@
 </script>
 
 <h1>Register User</h1>
-<form action="register.php" method="post" onsubmit="return check(this)" name = "form1">
+<form action="register.php" method="post"  onclick=="return check(this)" name = "form1">
 	<table>
 		<tr><td>Username</td><td>:</td><td><input type="text" name="u_name" ><span id='a' style="color: red;"></span></td></tr>
 		<tr><td>Fullname</td><td>:</td><td><input type="text" name="f_name"><span id='b' style="color: red;"></span></td></tr>
 		<tr><td>Password</td><td>:</td><td><input type="password" name="pwd"><span id='c' style="color: red;"></span></td></tr>
 		<tr><td>E_Mail</td><td>:</td><td><input type="text" name="e_mail"><span id='d' style="color: red;"></span></td></tr>
 		<tr><td>Date Of Birth</td><td>:</td><td><input type="text" name="dob" ><span id='e' style="color: red;"></span></td></tr>
-		<tr><td><input type="submit" value="Submit"><span id="signup_btn"></span></td><td></td><td><input type="reset" value="Reset"></td></tr>
+		<tr><td><input type="button" value="signUp"><span id="signup_btn"></span></td><td></td><td><input type="reset" value="Reset"></td></tr>
 </table>
 </form>
 
