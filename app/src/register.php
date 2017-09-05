@@ -48,13 +48,7 @@
 				form1.pwd.focus();
 				
 			}
-			else
-			{
-				document.getElementById("c").innerHTML = "";
-				//alert ("Please,Please Enter The Password");
-				form1.pwd.focus();
-
-			}
+			
 			
 			 if (form1.e_mail.value == "")
 			{
@@ -68,18 +62,6 @@
 				document.getElementById("d").innerHTML = "";
 				//alert ("Please,Please Enter The E-mail Address");
 				form1.e_mail.focus();
-			}
-			 if (form1.gender.value == "")
-			{
-				document.getElementById("spuid").innerHTML = "Please, Enter the gender.";
-				//alert("Please,Please Enter The Gender");
-				form1.gender.focus();
-				
-			}else
-			{
-				document.getElementById("spuid").innerHTML = "";
-				//alert("Please,Please Enter The Gender");
-				form1.gender.focus();
 			}
 			 if (form1.dob.value == "")
 			{
@@ -95,47 +77,7 @@
 				form1.dob.focus();
 
 			}
-			 if (form1.add.value == "")
-			{
-				document.getElementById("f").innerHTML = "Please, Enter address.";
-				//alert ("Please,Please Enter The Address");
-				form1.add.focus();
-				
-			}
-			else
-			{
-				document.getElementById("f").innerHTML = "";
-				//alert ("Please,Please Enter The Address");
-				form1.add.focus();
-			}
-			 if (form1.sta.value == "")
-			{
-				document.getElementById("g").innerHTML = "Please, Enter state.";
-				//alert ("Please,Please Enter The State");
-				form1.sta.focus();
-				
-			}
-			else
-			{
-				document.getElementById("g").innerHTML = "";
-				//alert ("Please,Please Enter The State");
-				form1.sta.focus();
-
-			}
-			 if (form1.cou.value == "")
-			{
-				document.getElementById("h").innerHTML = "Please, Enter country.";
-				//alert ("Please,Please Enter The Country");
-				form1.cou.focus();
-				
-			}
-			else
-			{
-				document.getElementById("h").innerHTML = "";
-				//alert ("Please,Please Enter The Country");
-				form1.cou.focus();
-			}
-			
+			 
 		}
 	}
 
