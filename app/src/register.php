@@ -85,6 +85,7 @@
     var signup_btn = document.getElementById("signup_btn");
    
     signup_btn.onclick= function(){
+	windows.alert(55);
  	
     var request= new XMLHttpRequest();
    
