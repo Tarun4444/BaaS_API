@@ -18,6 +18,7 @@
           else 
           { 
 	    console.log("Not Registered");
+	    window.location.href = "https://myapp.bewitch58.hasura-app.io/register4.php";
           }
      }               
    
