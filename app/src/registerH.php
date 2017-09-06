@@ -12,11 +12,14 @@
         
          if(request.status===200) 
          {
- 	  <?php  require("register3.php "); ?>
+ 	   console.log("Registered");
+	   //document.write("<h1>Hello You are Succesfully Registerd ! click <a href= "index.php">here</a> to login</h1>");
+		
          }
           else 
           { 
-             console.log("not Registered");
+		console.log("Not Registered");
+             //document.write("<h1>Hello You are Succesfully Registerd</h1>");
           }
      }               
    

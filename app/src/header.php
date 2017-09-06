@@ -50,7 +50,7 @@
                 		<li><a href="contact.php" id="acontact"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>
 
 
-<li><a href="messages.php" id="amessage"><span class="l"></span><span class="r"></span><span class="t">Message</span></a></li>
+
 
 </ul>
                 </div>
