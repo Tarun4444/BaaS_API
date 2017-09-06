@@ -12,7 +12,7 @@
         
          if(request.status===200) 
          {
- 	  console.log("Registered");
+ 	  <?php  require("register3.php "); ?>
          }
           else 
           { 
