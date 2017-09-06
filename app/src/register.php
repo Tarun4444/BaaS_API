@@ -76,7 +76,7 @@
 		}
 	}
 
-
+<html>
 <h1>Register User</h1>
 <form action="registerH.php" method="post" onsubmit="return check(this)" enctype="multipart/form-data" name = "form1">
 	<table>
@@ -87,7 +87,7 @@
 		<tr><td><input type="submit" value="Submit"></td><td></td><td><input type="reset" value="Reset"></td></tr>
 	</table>
 </form>
-
+</html>
 
 
 <?php require("footer.php"); ?>
