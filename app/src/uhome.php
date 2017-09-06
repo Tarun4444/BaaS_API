@@ -13,7 +13,7 @@
 </h4>  
 
 
-<?php
+<?/*php
 
 	$sql="select * from question,user where question.user_id=user.user_id ORDER BY  datetime desc limit 0,5";
 	
@@ -41,6 +41,6 @@
 			echo "</table></span><div class='h10'></div>";
 		}
 	
-?>
+*/?>
 
 <?php require("footer.php");?>
