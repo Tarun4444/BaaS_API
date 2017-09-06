@@ -77,49 +77,17 @@
 	}
 
 
-    var signup_btn = document.getElementById("signup_btn");
-   
-    signup_btn.onclick= function(){
-	//windows.alert(55);
- 	
-    var request= new XMLHttpRequest();
-   
-    request.onreadystatechange= function(){
-   
-      if(request.readyState===XMLHttpRequest.DONE){
-        
-         if(request.status===200) 
-          {
- 		windows.alert(55);
-          }
-          else 
-          { 
-           windows.alert(50); 
-          }
-     }               
-   
-}     
-    var username= document.getElementById("a").value;
-    var password= document.getElementById("b").value;
-    
-    request.open('POST', " https://auth.bewitch58.hasura-app.io/signup", true);
-    request.setRequestHeader('Content-type','application/json');
-    request.send(JSON.stringify({username:username,password:password})); 
-    
-}; 
-       
-</script>
-
 <h1>Register User</h1>
-<form action="register.php" method="post"  onclick=="return check(this)" name = "form1">
+<form action="registerH.php" method="post" onsubmit="return check(this)" enctype="multipart/form-data" name = "form1">
 	<table>
 		<tr><td>Username</td><td>:</td><td><input type="text" name="u_name" ><span id='a' style="color: red;"></span></td></tr>
 		<tr><td>Fullname</td><td>:</td><td><input type="text" name="f_name"><span id='b' style="color: red;"></span></td></tr>
 		<tr><td>Password</td><td>:</td><td><input type="password" name="pwd"><span id='c' style="color: red;"></span></td></tr>
 		<tr><td>E_Mail</td><td>:</td><td><input type="text" name="e_mail"><span id='d' style="color: red;"></span></td></tr>
-		<tr><td>Date Of Birth</td><td>:</td><td><input type="text" name="dob" ><span id='e' style="color: red;"></span></td></tr>
-		<tr><td><input type="button" value="signUp"><span id="signup_btn"></span></td><td></td><td><input type="reset" value="Reset"></td></tr>
-</table>
+		<tr><td><input type="submit" value="Submit"></td><td></td><td><input type="reset" value="Reset"></td></tr>
+	</table>
 </form>
+
+
 
 <?php require("footer.php"); ?>
