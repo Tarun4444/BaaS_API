@@ -3,10 +3,8 @@
 <script> 
     //The XMLHttpRequest object can be used to exchange data with a web server behind the scenes. This 		means that it is possible to update parts of a web page, without reloading the whole page.
     var user_id;
-   // var username;
-    var user_id_cookie;
-    var user_name_cookie;
-    function login_query(){    
+
+    function login_query(username,password){    
 	var requestObject1= new XMLHttpRequest(); 
            requestObject1.onreadystatechange= function(){
               if (requestObject1.readyState===4){
