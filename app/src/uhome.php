@@ -1,14 +1,18 @@
 <?php 
 	session_start();
 	require("header.php");
-	require("checkUser.php");
 ?>
-<script type="text/javascript">
-	document.getElementById("auhome").className="active";
-</script>
 
-<h4><a href="que.php">My Question</a>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="ans.php">My Answered </a></h4>
+
+<h4>
+	<a href="que.php">My Question</a>   
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+	<a href="ans.php">My Answered</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp ;
+	<a href="logout.php">LogOut</a> 
+</h4>  
+
+
 <?php
 
 	$sql="select * from question,user where question.user_id=user.user_id ORDER BY  datetime desc limit 0,5";

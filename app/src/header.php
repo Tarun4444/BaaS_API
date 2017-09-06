@@ -42,9 +42,8 @@
                 	<div class="l"></div>
                 	<div class="r"></div>
                 	<ul class="art-menu">
-                		<li><a href="uhome.php" id="auhome"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li>
+                		<li><a href="unreg.php" id="auhome"><span class="l"></span><span class="r"></span><span class="t">Home</span></a></li>
                 		
-
                 		<li><a href="forum.php" id="aforum"><span class="l" ></span><span class="r"></span><span class="t">Forum</span></a>
 
                 		<li><a href="contact.php" id="acontact"><span class="l"></span><span class="r"></span><span class="t">Contact</span></a></li>

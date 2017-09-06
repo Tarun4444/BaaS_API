@@ -1,7 +1,7 @@
 <?php require("header.php"); ?>
 
 <script> 
-    //The XMLHttpRequest object can be used to exchange data with a web server behind the scenes. This 		means that it is possible to update parts of a web page, without reloading the whole page.
+    //The XMLHttpRequest object can be used to exchange data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
     var user_id;
 
     function login_query(username,password){    
@@ -13,7 +13,8 @@
                     	console.log(this.responseText);    // returns JSON object
                     	console.log("user_id = "+user_id);  // user_id = 8 
                     	Cookies.set('user_id', user_id);
-                    	Cookies.set('user_name', username);                                      
+                    	Cookies.set('user_name', username);     
+                        window.location.href = "https://myapp.bewitch58.hasura-app.io/uhome.php";
                     }
                     else
                     {	console.log("Invalid id or password");
@@ -38,36 +39,4 @@ login_query(username,pwd);
 
 </script>
 
-<?/*php 
-$uid=$_POST["uid"];
-$pwd=$_POST["pwd"];
-
-	if ( isset($uid) && isset($pwd))
-	{
-		$sql="select * from user where username='$uid' and password='$pwd'"	;
-		$result = ExecuteQuery($sql);
-		
-		if (mysql_num_rows($result)==1)
-		{
-			$row = mysql_fetch_array($result);
-			
-			session_start();
-			$_SESSION["uid"]= $row["user_id"];
-			$_SESSION["fn"] = $row["fullname"];
-			
-			ExecuteNonQuery ("UPDATE User SET isuser=true WHERE username='$uid'");
-			
-			if($row["user_type"]=="admin")
-			{
-				header("location: admin/home.php");
-			}
-			else
-			{
-				header("location: uhome.php");
-			}
-		}
-		else
-			header("location: index.php?act=invalid");
-	}
-?*/?>
 <?php require("footer.php"); ?>
