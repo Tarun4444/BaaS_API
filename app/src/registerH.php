@@ -1,8 +1,8 @@
 <?php  require("header.php"); ?>
+
 <script>
-   var signup_btn = document.getElementById("signup_btn");
- 
-    signup_btn.onclick= function(){
+   
+ function auth_query(username,password){
  	
     var request= new XMLHttpRequest();
    
@@ -11,24 +11,26 @@
       if(request.readyState===XMLHttpRequest.DONE){
         
          if(request.status===200) 
-          {
- 		windows.alert(55);
-          }
+         {
+ 	  windows.alert("Registered");
+         }
           else 
           { 
            windows.alert(50); 
           }
      }               
    
-}     
-    var username= document.getElementById("a").value;
-    var password= document.getElementById("b").value;
-    
-    request.open('POST', " https://auth.bewitch58.hasura-app.io/signup", true);
-    request.setRequestHeader('Content-type','application/json');
-    request.send(JSON.stringify({username:username,password:password})); 
-    
-}; 
+}         
+   request.open('POST', " https://auth.bewitch58.hasura-app.io/signup", true);
+   request.setRequestHeader('Content-type','application/json');
+   request.send(JSON.stringify({username:username,password:password})); 
+ 
+}
+
+var username = '<?= $_POST['u_name']?>' ;
+var password = '<?= $_POST['pwd']?>' ;
+
+auth_query(username,pwd);
 
 </script>       
 <?php require("footer.php"); ?>
