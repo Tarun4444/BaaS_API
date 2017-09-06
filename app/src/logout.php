@@ -31,7 +31,7 @@
     request.send(null);
  }
 
-logout_query()
+logout_query();
 
 </script>
 
