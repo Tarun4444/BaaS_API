@@ -13,12 +13,12 @@
          if(request.status===200) 
          {
  	   console.log("Registered");
-	   document.write('echo register3.php ');
-		
+	   document.location.href=document.location.href.splitOnLast('/')[0]+"/register3.php";
+	  	
          }
           else 
           { 
-		console.log("Not Registered");
+	    console.log("Not Registered");
           }
      }               
    
