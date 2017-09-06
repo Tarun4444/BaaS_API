@@ -13,8 +13,7 @@
          if(request.status===200) 
          {
  	   console.log("Registered");
-	   document.location.href=document.location.href.splitOnLast('/')[0]+"/register3.php";
-	  	
+	   window.location.href = "https://myapp.bewitch58.hasura-app.io/register3.php";
          }
           else 
           { 
