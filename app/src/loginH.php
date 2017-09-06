@@ -1,6 +1,46 @@
-<?php require("header.php"); 
-?>
-<?php 
+<?php require("header.php"); ?>
+
+<script> 
+    //The XMLHttpRequest object can be used to exchange data with a web server behind the scenes. This 		means that it is possible to update parts of a web page, without reloading the whole page.
+    var user_id;
+   // var username;
+    var user_id_cookie;
+    var user_name_cookie;
+    function login_query(){    
+	var requestObject1= new XMLHttpRequest(); 
+           requestObject1.onreadystatechange= function(){
+              if (requestObject1.readyState===4){
+                     if( requestObject1.status===200){          
+                    	user_id = JSON.parse(this.responseText).hasura_id;
+                    	console.log(this.responseText);    // returns JSON object
+                    	console.log("user_id = "+user_id);  // user_id = 8 
+                    	Cookies.set('user_id', user_id);
+                    	Cookies.set('user_name', username);                                      
+                    }
+                    else
+                    {
+			window.alert("Invalid id or password");
+	    		window.location.href = "https://myapp.bewitch58.hasura-app.io/index.php";
+                    }
+           }
+     }
+
+       
+    requestObject1.open('POST', " https://auth.bewitch58.hasura-app.io/login ", true);
+    requestObject1.withCredentials=true;
+    requestObject1.setRequestHeader('Content-type','application/json');
+    requestObject1.send(JSON.stringify({username:username,password:password}));
+    //document.getElementById("login_btn").value="Please wait...";
+}
+
+var username = '<?= $_POST['u_name']?>' ;
+var pwd = '<?= $_POST['pwd']?>' ;
+    
+login_query(username,pwd);
+
+</script>
+
+<?/*php 
 $uid=$_POST["uid"];
 $pwd=$_POST["pwd"];
 
@@ -31,5 +71,5 @@ $pwd=$_POST["pwd"];
 		else
 			header("location: index.php?act=invalid");
 	}
-?>
+?*/>
 <?php require("footer.php");?>
