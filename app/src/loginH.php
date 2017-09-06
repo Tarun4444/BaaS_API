@@ -33,7 +33,7 @@
     //document.getElementById("login_btn").value="Please wait...";
 }
 
-var username = '<?= $_POST['u_name']?>' ;
+var username = '<?= $_POST['spuid']?>' ;
 var pwd = '<?= $_POST['pwd']?>' ;
     
 login_query(username,pwd);
