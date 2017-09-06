@@ -71,5 +71,5 @@ $pwd=$_POST["pwd"];
 		else
 			header("location: index.php?act=invalid");
 	}
-?*/>
-<?php require("footer.php");?>
+?*/?>
+<?php require("footer.php"); ?>
