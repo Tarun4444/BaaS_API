@@ -69,72 +69,7 @@
 				//alert ("Please,Please Enter The E-mail Address");
 				form1.e_mail.focus();
 			}
-			 if (form1.gender.value == "")
-			{
-				document.getElementById("spuid").innerHTML = "Please, Enter the gender.";
-				//alert("Please,Please Enter The Gender");
-				form1.gender.focus();
-				
-			}else
-			{
-				document.getElementById("spuid").innerHTML = "";
-				//alert("Please,Please Enter The Gender");
-				form1.gender.focus();
-			}
-			 if (form1.dob.value == "")
-			{
-				document.getElementById("e").innerHTML = "Please, Enter date of birth.";
-		//		alert ("Please,Please Enter The Date Of Birth");
-				form1.dob.focus();
-				
-			}
-			else
-			{
-				document.getElementById("e").innerHTML = "";
-		//		alert ("Please,Please Enter The Date Of Birth");
-				form1.dob.focus();
 
-			}
-			 if (form1.add.value == "")
-			{
-				document.getElementById("f").innerHTML = "Please, Enter address.";
-				//alert ("Please,Please Enter The Address");
-				form1.add.focus();
-				
-			}
-			else
-			{
-				document.getElementById("f").innerHTML = "";
-				//alert ("Please,Please Enter The Address");
-				form1.add.focus();
-			}
-			 if (form1.sta.value == "")
-			{
-				document.getElementById("g").innerHTML = "Please, Enter state.";
-				//alert ("Please,Please Enter The State");
-				form1.sta.focus();
-				
-			}
-			else
-			{
-				document.getElementById("g").innerHTML = "";
-				//alert ("Please,Please Enter The State");
-				form1.sta.focus();
-
-			}
-			 if (form1.cou.value == "")
-			{
-				document.getElementById("h").innerHTML = "Please, Enter country.";
-				//alert ("Please,Please Enter The Country");
-				form1.cou.focus();
-				
-			}
-			else
-			{
-				document.getElementById("h").innerHTML = "";
-				//alert ("Please,Please Enter The Country");
-				form1.cou.focus();
-			}
 			return false;
 		}
 		else
@@ -152,13 +87,6 @@
 <tr><td>Fullname</td><td>:</td><td><input type="text" name="f_name"><span id='b' style="color: red;"></span></td></tr>
 <tr><td>Password</td><td>:</td><td><input type="password" name="pwd"><span id='c' style="color: red;"></span></td></tr>
 <tr><td>E_Mail</td><td>:</td><td><input type="text" name="e_mail"><span id='d' style="color: red;"></span></td></tr>
-<tr><td>Gender</td><td>:</td><td><input type="radio" name="gender" value="1" checked="checked">male <input type="radio" name="gender" value="2">female<span id='spuid' style="color: red;"></span></td></tr>
-<tr><td>Date Of Birth</td><td>:</td><td><input type="text" name="dob" ><span id='e' style="color: red;"></span></td></tr>
-<tr><td>Image</td><td>:</td><td><input type="file" name="ima"></td></tr>
-<tr><td>Address</td><td>:</td><td><textarea rows="3" cols="15" name="add"></textarea><span id='f' style="color: red;"></span></td></tr>
-<tr><td>State</td><td>:</td><td><input type="text" name="sta"><span id='g' style="color: red;"></span></td></tr>
-<tr><td>Country</td><td>:</td><td><input type="text" name="cou"><span id='h' style="color: red;"></span></td></tr>
-
 <tr><td><input type="submit" value="Submit"></td><td></td><td><input type="reset" value="Reset"></td></tr></table></form>
 
 <?php require("footer.php"); ?>
