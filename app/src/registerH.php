@@ -13,13 +13,12 @@
          if(request.status===200) 
          {
  	   console.log("Registered");
-	   document.write('<h1>Hello You are Succesfully Registerd ! click <a href= "index.php">here</a> to login</h1>');
+	   document.write('echo register3.php ');
 		
          }
           else 
           { 
 		console.log("Not Registered");
-                document.write("<h1>Hello You are Succesfully Registerd</h1>");
           }
      }               
    
