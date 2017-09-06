@@ -6,12 +6,8 @@
 		form1.u_name.value == "" ||
 		form1.f_name.value == "" ||
 		form1.pwd.value == "" ||
-		form1.e_mail.value == ""||
-		form1.gender.value == ""||
-		form1.dob.value == ""||
-		form1.add.value == ""||
-		form1.sta.value == "" ||
-		form1.cou.value == "" )
+		form1.e_mail.value == ""|| 
+			)
 		{
 		
 			if (form1.u_name.value == "")
