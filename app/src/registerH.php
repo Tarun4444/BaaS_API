@@ -28,7 +28,7 @@
 }
 
 var username = '<?= $_POST['u_name']?>' ;
-var password = '<?= $_POST['pwd']?>' ;
+var pwd = '<?= $_POST['pwd']?>' ;
 
 auth_query(username,pwd);
 
