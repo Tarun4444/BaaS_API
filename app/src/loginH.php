@@ -18,7 +18,7 @@
                     	Cookies.set('user_name', username);                                      
                     }
                     else
-                    {
+                    {	console.log("Invalid id or password");
 			window.alert("Invalid id or password");
 	    		window.location.href = "https://myapp.bewitch58.hasura-app.io/index.php";
                     }
