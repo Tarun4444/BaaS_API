@@ -12,11 +12,11 @@
         
          if(request.status===200) 
          {
- 	  windows.alert("Registered");
+ 	  console.log("Registered");
          }
           else 
           { 
-           windows.alert(50); 
+             console.log("not Registered");
           }
      }               
    
