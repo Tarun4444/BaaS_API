@@ -10,6 +10,11 @@
                      if( requestObject1.status===200){          
                     	
 			user_id = JSON.parse(this.responseText).hasura_id;
+			var auth_tok = JSON.parse(this.responseText).auth_token;
+			console.log(auth_tok);
+			localStorage.setItem('auth_token', 'auth_tok');
+
+			
                     	console.log(this.responseText);    // returns JSON object
                     	console.log("user_id = "+user_id);  // user_id = 8 
 			window.location.href = "https://myapp.bewitch58.hasura-app.io/uhome.php";
