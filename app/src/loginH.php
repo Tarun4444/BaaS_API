@@ -15,10 +15,7 @@
 			user_id = JSON.parse(this.responseText).hasura_id;
                     	console.log(this.responseText);    // returns JSON object
                     	console.log("user_id = "+user_id);  // user_id = 8 
-                    	
-			Cookies.set('user_id', user_id);
-                    	Cookies.set('user_name', username);     
-                        
+                 
 			window.location.href = "https://myapp.bewitch58.hasura-app.io/uhome.php";
                     }
                     else

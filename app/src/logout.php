@@ -21,11 +21,7 @@
         }
    
      //making the HTTP request 
-     
-     
-    Cookies.remove('user_id');
-    Cookies.remove('user_name');
-   
+        
     request.open('GET'," https://auth.bewitch58.hasura-app.io/logout ", true);
     request.withCredentials=true;
     request.send(null);
