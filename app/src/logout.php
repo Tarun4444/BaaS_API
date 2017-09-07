@@ -9,13 +9,13 @@
         {
               if(request.status===200)
           {     
-		console.log("parse");
+		console.log(JSON.parse(this.responseText).message);
 		window.location.href = "https://myapp.bewitch58.hasura-app.io/index.php";	
 	  }
              
           else
           { 
-          console.log("JSON");
+          console.log(JSON.parse(this.responseText).message);
           }
        
         }     
