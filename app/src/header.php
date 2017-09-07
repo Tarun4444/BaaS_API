@@ -34,7 +34,7 @@
                 <div class="art-Header">
                     <div class="art-Header-jpeg"></div>
                     <div class="art-Logo">
-                        <h1 id="name-text" class="art-Logo-name"><a href="#">HUDDLER</a></h1>
+                        <h1 id="name-text" class="art-Logo-name">HUDDLER</h1>
             
                     </div>
                 </div>
