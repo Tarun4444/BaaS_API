@@ -12,11 +12,12 @@ request.onreadystatechange= function(){
 	console.log("error");	
 	}          
   }
-}
+
   
 request.open('POST'," https://auth.bewitch58.hasura-app.io/logout ", true);
 request.withCredentials=true;
 
+}
 logout_query();
 
 </script>
