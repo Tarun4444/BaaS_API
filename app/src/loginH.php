@@ -3,17 +3,23 @@
 <script> 
     //The XMLHttpRequest object can be used to exchange data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
     var user_id;
-    function login_query(username,password){    
+    function login_query(username,password){ 
+	console.log(1);   
 	var requestObject1= new XMLHttpRequest(); 
-           requestObject1.onreadystatechange= function(){
+        	console.log(2);   
+		requestObject1.onreadystatechange= function(){
+			console.log(3);
               if (requestObject1.readyState===4){
                      if( requestObject1.status===200){          
-                    	user_id = JSON.parse(this.responseText).hasura_id;
+                    	
+			user_id = JSON.parse(this.responseText).hasura_id;
                     	console.log(this.responseText);    // returns JSON object
                     	console.log("user_id = "+user_id);  // user_id = 8 
-                    	Cookies.set('user_id', user_id);
+                    	
+			Cookies.set('user_id', user_id);
                     	Cookies.set('user_name', username);     
-                        window.location.href = "https://myapp.bewitch58.hasura-app.io/uhome.php";
+                        
+			window.location.href = "https://myapp.bewitch58.hasura-app.io/uhome.php";
                     }
                     else
                     {	console.log("Invalid id or password");
