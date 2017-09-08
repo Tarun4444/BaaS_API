@@ -1,11 +1,10 @@
 <?php 
-	session_start();
 	require("header.php");
 ?>
 
 
 <h4>
-<a href="que.php">My Question</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ahref="ans.php">MyAnswered<a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="logout.php">LogOut</a> 
+<a href="logout.php">LogOut</a> 
 </h4>  
 
 
