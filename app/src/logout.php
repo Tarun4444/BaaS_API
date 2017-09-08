@@ -13,8 +13,9 @@ request.onreadystatechange= function(){
 	console.log("error");	
 	}          
   }
-request.open('GET'," https://auth.bewitch58.hasura-app.io/user/logout ", true);
+request.open('GET',"https://auth.bewitch58.hasura-app.io/user/logout", true);
 request.withCredentials=true;
+request.send(null);
 
 }
 
