@@ -16,6 +16,7 @@ request.onreadystatechange= function(){
 request.open('GET'," https://auth.bewitch58.hasura-app.io/logout ", true);
 request.withCredentials=true;
 request.setRequestHeader('Authorization','Bearer');
+console.log('Bearer');
 }
 
 logout_query();
