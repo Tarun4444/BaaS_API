@@ -6,8 +6,7 @@ function logout_query(){
 var request= new XMLHttpRequest();
 request.onreadystatechange= function(){
    if(request.status===200){     
-        window.location.href = "https://myapp.bewitch58.hasura-app.io/index.php";
-	return true;	
+        window.location.href = "https://myapp.bewitch58.hasura-app.io/index.php";	
     }
     else{
 	console.log("error");	

@@ -13,8 +13,6 @@
                     	console.log(this.responseText);    // returns JSON object
                     	console.log("user_id = "+user_id);  // user_id = 8 
 				
-			document.cookie('user_id', user_id);
-                    	document.cookie('user_name', username);
 			
 			window.location.href = "https://myapp.bewitch58.hasura-app.io/uhome.php";
                     }
