@@ -28,7 +28,7 @@
 }
 
 var timeStmp = timestamp();
-	
+	console.log(timestmp);
    function insert_query(new_dis,view_dis){ 
 	var request= new XMLHttpRequest();	   
             request.onreadystatechange = function () {
