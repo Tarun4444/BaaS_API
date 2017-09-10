@@ -49,7 +49,7 @@ function check(form1)
 		  	<h4><a href="logout.php">LogOut</a> </h4>
 		</div>
 		<div align = "left">
-			<form action="/for.php" method="post" onsubmit="return check(this) enctype="multipart/form-data" name = "form1">
+			<form action="/for.php" method="post" name = "form1" onsubmit="check(form1)" >
 			  New DISCUSSION : <br>
 			  <input type="text" name="new_dis" id="a">
 			  <br>	
