@@ -5,9 +5,9 @@
 
 <script>
 var auth_toke = "; "+document.cookie ;
-//auth_toke = auth_toke.split("; authio=");
-//if(auth_toke==2)
- //auth_toke=auth_toke.pop().split(";").shift();
+auth_toke = auth_toke.split("; authio=");
+if(auth_toke.length==2)
+ auth_toke=auth_toke.pop().split(";").shift();
 
 console.log(auth_toke);
 
