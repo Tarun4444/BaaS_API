@@ -2,7 +2,7 @@
 
 <script> 
     //The XMLHttpRequest object can be used to exchange data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
-    function login_query(username,password){    
+    function login_query(usernam,passwor){    
 	 var user_id;
     	var auth_toke;
 	var requestObject1= new XMLHttpRequest(); 
@@ -29,7 +29,7 @@
     requestObject1.withCredentials=true;
     requestObject1.setRequestHeader('Content-type','application/json');
 
-    requestObject1.send(JSON.stringify({username:username,password:password}));
+    requestObject1.send(JSON.stringify({username:usernam,password:passwor}));
     //document.getElementById("login_btn").value="Please wait...";
 }
 

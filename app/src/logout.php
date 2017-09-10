@@ -20,7 +20,7 @@ request.withCredentials=true;
 
 request.setRequestHeader('Authorization','Bearer '+auth_toke);
 request.setRequestHeader('Content-type','application/json');
-request.send(null);
+request.send(JSON.stringify({});
 
 }
 
