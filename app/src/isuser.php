@@ -18,7 +18,7 @@ require("header.php");
         	 window.location.href = "https://myapp.bewitch58.hasura-app.io/uhome.php";
 	}
 
-
+}
 
 </script>
 
