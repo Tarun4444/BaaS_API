@@ -15,7 +15,7 @@
                     	console.log(this.responseText);    // returns JSON object
                     	console.log("user_id = "+user_id + auth_toke);  // user_id = 8 
 				
-			window.location.href = "https://myapp.bewitch58.hasura-app.io/uhome.php?uid="+user_id;
+			window.location.href = "https://myapp.bewitch58.hasura-app.io/uhome.php?uid="+auth_toke;
                     }
                     else
                     {	console.log("Invalid id or password");
@@ -28,6 +28,7 @@
     requestObject1.open('POST', " https://auth.bewitch58.hasura-app.io/login ", true);
     requestObject1.withCredentials=true;
     requestObject1.setRequestHeader('Content-type','application/json');
+
     requestObject1.send(JSON.stringify({username:username,password:password}));
     //document.getElementById("login_btn").value="Please wait...";
 }

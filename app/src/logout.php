@@ -2,7 +2,7 @@
 
 
 <script>
-var auth_toke = '<?= $_POST['auth_token']?>' ;
+var auth_toke = '<?= $_POST['uid']?>' ;
 console.log(auth_toke);
 
 function logout_query(){
@@ -17,7 +17,9 @@ request.onreadystatechange= function(){
   }
 request.open('GET',"https://auth.bewitch58.hasura-app.io/user/logout", true);
 request.withCredentials=true;
-request.setRequestHeader('Authorization','Bearer');
+
+request.setRequestHeader('Authorization','Bearer '+auth_toke);
+request.setRequestHeader('Content-type','application/json');
 request.send(null);
 
 }
