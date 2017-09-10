@@ -16,6 +16,8 @@
     var request = new XMLHttpRequest();
     var orderedQuestions;
     var recent_questions ;
+    //var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
+
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
@@ -26,9 +28,10 @@
              }
 	}
     }  
+   
     request.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
     request.setRequestHeader('Content-type','application/json');
-    request.setRequestHeader('Authorization','Bearer '+ a66tjvabxo6w6mojba4dd4ngat22jv9p);
+    //request.setRequestHeader('Authorization','Bearer '+admin_toke);
     request.send(JSON.stringify({"type":"select","args":{"table":"question","columns":["*"]}}));
 };
 
