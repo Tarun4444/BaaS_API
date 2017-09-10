@@ -23,10 +23,9 @@
             if (request.status === 200) {
                
                console.log(this.responseText);  // returns Arrray of Objects
-               orderedQuestions=JSON.parse(this.responseText);
-               console.log(orderedQuestions);
-
-		var employees = JSON.parse( txt ).this.responseText;
+               //orderedQuestions=JSON.parse(this.responseText);
+               //console.log(orderedQuestions);
+		var employees = JSON.parse(this.responseText);
 		var $table = $( "<table></table>" );
 
 		for ( var i = 0; i < employees.length; i++ ) {
