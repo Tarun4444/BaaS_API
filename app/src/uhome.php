@@ -1,5 +1,6 @@
 <?php 
 	require("header.php");
+session_start();
 	$_SESSION['uid']=$_GET['uid'];
         echo "{$_SESSION['uid']}";
 ?>
