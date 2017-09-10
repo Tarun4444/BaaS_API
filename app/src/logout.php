@@ -2,7 +2,7 @@
 
 
 <script>
-var auth_toke = '<?= $_SESSIO["uid"]?>' ;
+var auth_toke = '<? $_SESSIO["uid"]?>' ;
 console.log(auth_toke);
 
 function logout_query(){
@@ -20,7 +20,7 @@ request.withCredentials=true;
 
 //request.setRequestHeader('Authorization','Bearer '+auth_toke);
 console.log('Bearer '+auth_toke);
-//request.send(JSON.stringify({}));
+request.send(null);
 
 }
 
