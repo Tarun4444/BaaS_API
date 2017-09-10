@@ -2,7 +2,7 @@
 
 
 <script>
-var auth_toke = '<?= $_POST['uid']?>' ;
+var auth_toke = '<?= $_SESSIO["uid"]?>' ;
 console.log(auth_toke);
 
 function logout_query(){
