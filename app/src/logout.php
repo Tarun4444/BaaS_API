@@ -2,7 +2,7 @@
 
 
 <script>
-var auth_toke = '<?php echo $_SESSION["uid"]?>' ;
+var auth_toke = '<?php echo $_SESSION["uid"]; ?>' ;
 console.log(auth_toke);
 
 function logout_query(){
