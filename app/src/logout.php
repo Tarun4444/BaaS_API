@@ -6,8 +6,8 @@
 <script>
 var auth_toke = "; "+document.cookie ;
 auth_toke = auth_toke.split("; dinoisses=");
-if(auth_toke.length==2)
- auth_toke=auth_toke.pop().split(";").shift();
+//if(auth_toke.length==2)
+ //auth_toke=auth_toke.pop().split(";").shift();
 
 console.log(auth_toke);
 
