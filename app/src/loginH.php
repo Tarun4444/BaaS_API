@@ -1,4 +1,5 @@
-<?php require("header.php"); ?>
+<?php require("header.php");
+session_start(); ?>
 
 <script> 
     //The XMLHttpRequest object can be used to exchange data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.

@@ -1,11 +1,12 @@
 <?php require("header.php");
+session_start();
 $session_value=(isset($_SESSION['uid']))?$_SESSION['uid']:'adskjfh';
 echo $session_value;
 ?>
 
 
 <script>
-var auth_toke = '<?php echo $ssession_value; ?>' ;
+var auth_toke = '<?= $session_value; ?>' ;
 console.log(auth_toke);
 
 function logout_query(){
