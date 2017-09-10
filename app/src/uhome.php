@@ -2,10 +2,9 @@
 	require("header.php");
 
 	$sexy=$_GET['uid'];//$hi="sfdgsf";
+	$sexy="logout.php?uid=".$sexy;
 
-<h4>
-<a href="logout.php?uid=".$sexy>LogOut</a> 
-</h4>  
+echo '<h4><a href="'.$sexy.'">LogOut</a> </h4> '; 
 ?>
 
 
