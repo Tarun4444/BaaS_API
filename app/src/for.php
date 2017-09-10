@@ -4,7 +4,7 @@
     
 <script>
    var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
-   var j=;
+   
 	
    function insert_query(new_dis,view_dis){ 
 	var request= new XMLHttpRequest();	   
