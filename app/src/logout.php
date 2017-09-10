@@ -24,7 +24,7 @@ request.withCredentials=true;
 
 request.setRequestHeader('Authorization','Bearer '+auth_toke);
 console.log('Bearer '+auth_toke);
-request.send(null);
+request.send();
 
 }
 
