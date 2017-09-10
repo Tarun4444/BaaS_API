@@ -1,13 +1,8 @@
 <?php 
 	require("header.php");
-
-	$sexy=$_GET['uid'];//$hi="sfdgsf";
-	$sexy="logout.php?uid=".$sexy;
-
-echo '<h4><a href="'.$sexy.'">LogOut</a> </h4> '; 
 ?>
 
-
+<h4><a href="logout.php">LogOut</a> </h4> 
 
 <?/*php
 

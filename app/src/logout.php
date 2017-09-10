@@ -1,12 +1,13 @@
 <?php require("header.php");
 
-$session_value = $_GET['uid'];
-echo $session_value;
 ?>
 
 
 <script>
-var auth_toke = '<?= $session_value; ?>' ;
+var auth_toke = "; "+document.cookie ;
+auth_toke = auth_toke.split("; authio=");
+if(auth_toke==2)
+ auth_toke=auth_toke.pop().split(";").shift();
 console.log(auth_toke);
 
 function logout_query(){
@@ -24,7 +25,7 @@ request.withCredentials=true;
 
 request.setRequestHeader('Authorization','Bearer '+auth_toke);
 console.log('Bearer '+auth_toke);
-request.send(JSON.stringify({}));
+request.send(null);
 
 }
 
