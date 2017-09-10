@@ -28,7 +28,7 @@
 }
 
 var timeStmp = timeStamp();
-console.log(timestmp);
+console.log(timeStmp);
 
    function insert_query(new_dis,view_dis){ 
 	var request= new XMLHttpRequest();	   
