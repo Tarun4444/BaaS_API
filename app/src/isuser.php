@@ -10,7 +10,7 @@ require("header.php");
 	auth_toke = auth_toke.split("; authio=");
 	if(auth_toke.length==2)
 	 auth_toke=auth_toke.pop().split(";").shift(); 
-        console.log(loggedIn_user);
+        console.log(auth_token);
         if(auth_toke==""){
        	     window.location.href = "https://myapp.bewitch58.hasura-app.io/index.php";
         }
