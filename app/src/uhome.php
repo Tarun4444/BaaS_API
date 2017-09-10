@@ -40,25 +40,28 @@ function check(form1)
 			return true;
 	}
 
-
-<div>
-	<div align="right">
-	  	<h4><a href="logout.php">LogOut</a> </h4>
-	</div>
-	<div align = "left">
-		<form action="/for.php" method="post" onsubmit="return check(this) enctype="multipart/form-data" name = "form1">
-		  New DISCUSSION : <br>
-		  <input type="text" name="new_dis" id="a">
-		  <br>	
-		   <br>VIEWS : <br>
-		  <input type="text" name="view_dis" id="b">
-		  <br><br>
-		  <input type="submit" value="Submit">
-		</form> 
-	</div>
-</div>
-
 </script>
+
+<html>
+  <body>
+	<div>
+		<div align="right">
+		  	<h4><a href="logout.php">LogOut</a> </h4>
+		</div>
+		<div align = "left">
+			<form action="/for.php" method="post" onsubmit="return check(this) enctype="multipart/form-data" name = "form1">
+			  New DISCUSSION : <br>
+			  <input type="text" name="new_dis" id="a">
+			  <br>	
+			   <br>VIEWS : <br>
+			  <input type="text" name="view_dis" id="b">
+			  <br><br>
+			  <input type="submit" value="Submit">
+			</form> 
+		</div>
+	</div>
+  </body>
+</html>
 
 
 <?php require("footer.php");?>
