@@ -24,38 +24,21 @@
                
                console.log(this.responseText);  // returns Arrray of Objects
                orderedQuestions=JSON.parse(this.responseText);
-		var employees = JSON.stringify(orderedQuestions);
-		
+	       
+	       var employees = JSON.stringify(orderedQuestions);
                console.log(employees);
 		
 		var table = document.createElement("table");
 		for (var i = 0; i < employees.length; i++) {
 		  var row = table.insertRow(-1);
 		  var firstNameCell = row.insertCell(-1);
-		  firstNameCell.appendChild(document.createTextNode(employees[i].firstName));
+		  firstNameCell.appendChild(document.createTextNode(employees[i].discussion_topic));
 		  var lastNameCell = row.insertCell(-1);
-		  lastNameCell.appendChild(document.createTextNode(employees[i].lastName));
+		  lastNameCell.appendChild(document.createTextNode(employees[i].discussion_detail));
 		}
 		document.body.appendChild(table);
 		
-		/*var employees = JSON.parse(this.responseText);
-		var $table = $( "<table></table>" );
-
-		for ( var i = 0; i < employees.length; i++ ) {
-			var emp = employees[i];
-			var $line = $( "<tr></tr>" );
-				$line.append( $( "<td></td>" ).html( emp.discussion_id ) );
-				$line.append( $( "<td></td>" ).html( emp.discussion_topic ) );
-				$line.append( $( "<td></td>" ).html( emp.discussion_detail ) );					
-				$table.append( $line );
-		}
-
-		$table.appendTo( document.body );
-
-		// if you want to insert this table in a div with id attribute 
-		// set as "myDiv", you can do this:
-		//$table.appendTo( $( "#myDiv" ) );*/
-             }
+	    }
 	}
     }  
    
