@@ -36,9 +36,12 @@ function check(form1)
 				//alert ("Please,Please Enter The Fullname");
 				form1.f_name.focus();
 			}
+			
+			console.log(a);
 			return false;
 		}
 		else
+			console.log(b);
 			return true;
 	}
 
