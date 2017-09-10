@@ -25,9 +25,12 @@
                console.log(this.responseText);  // returns Arrray of Objects
                orderedQuestions=JSON.parse(this.responseText);
 	       
-	       var employees = JSON.stringify(orderedQuestions);
-               console.log(employees);
+	       var employee = JSON.stringify(orderedQuestions);
+               console.log(employee);
 		
+		var employees = JSON.parse(employee);
+		console.log(employees);
+
 		var table = document.createElement("table");
 		for (var i = 0; i < employees.length; i++) {
 		  var row = table.insertRow(-1);
