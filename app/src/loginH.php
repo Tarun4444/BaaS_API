@@ -15,9 +15,8 @@
                     	console.log(this.responseText);    // returns JSON object
                     	console.log("user_id = "+user_id + auth_toke);  // user_id = 8 
 				
-			document.cookie = "dinoisses="+auth_toke+"; Domain=.bewitch58.hasura-app.io;";
-console.log(document.cookie);			
-window.location.href = "https://myapp.bewitch58.hasura-app.io/uhome.php";
+			document.cookie = "authio="+auth_toke;
+			window.location.href = "https://myapp.bewitch58.hasura-app.io/uhome.php";
                     }
                     else
                     {	console.log("Invalid id or password");
