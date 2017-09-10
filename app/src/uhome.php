@@ -2,6 +2,8 @@
 	require("header.php");
 ?>
 
+<html>
+<body>
 <script type="text/javascript">
 
 function check(form1)
@@ -42,8 +44,6 @@ function check(form1)
 
 </script>
 
-<html>
-  <body>
 	<div>
 		<div align="right">
 		  	<h4><a href="logout.php">LogOut</a> </h4>
