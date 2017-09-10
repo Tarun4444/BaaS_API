@@ -23,7 +23,7 @@ request.onreadystatechange= function(){
 request.open('POST',"https://auth.bewitch58.hasura-app.io/user/logout", true);
 request.withCredentials=true;
 
-request.setRequestHeader('Authorization','Bearer '+auth_toke);
+//request.setRequestHeader('Authorization','Bearer '+auth_toke);
 console.log('Bearer '+auth_toke);
 request.send(null);
 
