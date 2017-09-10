@@ -25,7 +25,10 @@
 var new_dis = '<?= $_POST['new_disc']?>' ;
 var view_dis = '<?= $_POST['view_disc']?>' ;
 
-auth_query(new_dis,view_dis);
+console.log(new_dis);
+console.log(view_dis);
+
+insert_query(new_dis,view_dis);
 </script>     
 
 <?php require("footer.php");?>
