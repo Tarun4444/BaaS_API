@@ -1,8 +1,11 @@
-<?php require("header.php");?>
+<?php require("header.php");
+$session_value=(isset($_SESSION['uid']))?$_SESSION['uid']:'';
+echo $session_value;
+?>
 
 
 <script>
-var auth_toke = '<?php echo "{$_SESSION["uid"]}"; ?>' ;
+var auth_toke = '<?php echo $ssession_value; ?>' ;
 console.log(auth_toke);
 
 function logout_query(){
