@@ -23,9 +23,22 @@
             if (request.status === 200) {
                
                console.log(this.responseText);  // returns Arrray of Objects
-               //orderedQuestions=JSON.parse(this.responseText);
-               //console.log(orderedQuestions);
-		var employees = JSON.parse(this.responseText);
+               orderedQuestions=JSON.parse(this.responseText);
+		var employees = JSON.stringify(orderedQuestions);
+		
+               console.log(employees);
+		
+		var table = document.createElement("table");
+		for (var i = 0; i < employees.length; i++) {
+		  var row = table.insertRow(-1);
+		  var firstNameCell = row.insertCell(-1);
+		  firstNameCell.appendChild(document.createTextNode(employees[i].firstName));
+		  var lastNameCell = row.insertCell(-1);
+		  lastNameCell.appendChild(document.createTextNode(employees[i].lastName));
+		}
+		document.body.appendChild(table);
+		
+		/*var employees = JSON.parse(this.responseText);
 		var $table = $( "<table></table>" );
 
 		for ( var i = 0; i < employees.length; i++ ) {
@@ -41,7 +54,7 @@
 
 		// if you want to insert this table in a div with id attribute 
 		// set as "myDiv", you can do this:
-		//$table.appendTo( $( "#myDiv" ) );
+		//$table.appendTo( $( "#myDiv" ) );*/
              }
 	}
     }  
