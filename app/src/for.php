@@ -4,7 +4,7 @@
     
 <script>
    var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
-   
+   var j=5;
    function insert_query(new_dis,view_dis){ 
 	var request= new XMLHttpRequest();	   
             request.onreadystatechange = function () {
@@ -18,7 +18,7 @@
             request.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
 	    request.setRequestHeader('Content-type','application/json');
 	    request.setRequestHeader('Authorization','Bearer '+admin_toke);
-	    request.send(JSON.stringify({"type":"insert","args":{"table":"question","objects":[{"discussion_topic":new_dis,"discussion_detail":view_dis}]}}));
+	    request.send(JSON.stringify({"type":"insert","args":{"table":"question","objects":[{"discussion_id":j++,"discussion_topic":new_dis,"discussion_detail":view_dis}]}}));
 
 	};
 
