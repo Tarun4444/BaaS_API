@@ -2,7 +2,7 @@
 
 
 <script>
-
+var auth_toke = '<?= $_POST['auth_token']?>' ;
 console.log(auth_toke);
 
 function logout_query(){
