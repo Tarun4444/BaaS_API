@@ -1,15 +1,13 @@
 <?php 
 	require("header.php");
 
-	$_SESSION['uid']=$_GET['uid'];//$hi="sfdgsf";
-        echo "{$_SESSION['uid']}";
-	echo "$hi"+"dsf";
-?>
-
+	$sexy=$_GET['uid'];//$hi="sfdgsf";
 
 <h4>
-<a href="logout.php">LogOut</a> 
+<a href="logout.php?uid=".$sexy>LogOut</a> 
 </h4>  
+?>
+
 
 
 <?/*php
