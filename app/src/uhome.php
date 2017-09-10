@@ -1,9 +1,9 @@
 <?php 
 	require("header.php");
 
-	$_SESSION['uid']=$_GET['uid'];
+	$_SESSION['uid']=$_GET['uid'];//$hi="sfdgsf";
         echo "{$_SESSION['uid']}";
-	echo $hi;
+	echo "$hi";
 ?>
 
 
