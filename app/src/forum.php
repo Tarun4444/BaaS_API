@@ -1,22 +1,43 @@
-<?php session_start();
+<?php 
  require("header.php");
- 
- if ($_SESSION["fn"] == null){
- 	header("location:unreg.php");
-	exit();
- }
- 
- require("checkUser.php");
- ?>
- 
- <script type="text/javascript">
-	document.getElementById("aforum").className="active";
+?>
+
+<script>
+
+ window.onload=function(){ 
+
+        var auth_toke = "; "+document.cookie ;
+	var poop=auth_toke.search("authio");
+		auth_toke = auth_toke.split("; authio=");
+	if(auth_toke.length==2)
+    		auth_toke=auth_toke.pop().split(";").shift(); 
+    	console.log(auth_toke);
+  
+    var request = new XMLHttpRequest();
+    var orderedQuestions;
+    var recent_questions ;
+    request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE) {
+            if (request.status === 200) {
+               
+               console.log(this.responseText);  // returns Arrray of Objects
+               orderedQuestions=JSON.parse(this.responseText);
+               console.log(orderedQuestions);
+             }
+	}
+    }  
+    request.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
+    request.setRequestHeader('Content-type','application/json');
+    request.setRequestHeader('Authorization','Bearer '+auth_toke);
+    request.send(JSON.stringify({"type":"select","args":{"table":"question","columns":["*"]}}));
+};
+
 </script>
 
 <?php
-	$topic = ExecuteQuery ("SELECT * FROM topic");
-	
-	while ($r1 = mysql_fetch_array($topic))
+	//$topic = ExecuteQuery ("SELECT * FROM topic");
+	//$r1 = mysql_fetch_array($topic)
+	/*while ()
 	{
 			echo "<div class='heading'>$r1[topic_name]</div>";
 		
@@ -32,9 +53,7 @@
 				echo "<p>$r2[subtopic_description]</p>";
 				echo "</div>";
 			}
-	}
-	
-	
-?>
+	}	
+*/?>
 
 <?php require("footer.php"); ?>
