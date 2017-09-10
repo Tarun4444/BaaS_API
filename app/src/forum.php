@@ -22,14 +22,14 @@
         if (request.readyState === XMLHttpRequest.DONE) {
             if (request.status === 200) {
                
-               console.log(this.responseText);  // returns Arrray of Objects
+               //console.log(this.responseText);  // returns Arrray of Objects
                orderedQuestions=JSON.parse(this.responseText);
 	       
 	       var employee = JSON.stringify(orderedQuestions);
-               console.log(employee);
+              // console.log(employee);
 		
 		var employees = JSON.parse(employee);
-		console.log(employees);
+		//console.log(employees);
 
 		var table = document.createElement("table");
 		for (var i = 0; i < employees.length; i++) {

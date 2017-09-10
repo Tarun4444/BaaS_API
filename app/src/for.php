@@ -18,7 +18,7 @@
             request.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
 	    request.setRequestHeader('Content-type','application/json');
 	    request.setRequestHeader('Authorization','Bearer '+admin_toke);
-	    request.send(JSON.stringify({"type":"insert","args":{"table":"question","objects":{"discussion_topic":new_dis,"discussion_detail":view_dis}}}));
+	    request.send(JSON.stringify({"type":"insert","args":{"table":"question","objects":[{"discussion_topic":new_dis,"discussion_detail":view_dis}]}}));
 
 	};
 
