@@ -3,6 +3,8 @@
 
 <script>
 
+console.log(auth_toke);
+
 function logout_query(){
 var request= new XMLHttpRequest();
 request.onreadystatechange= function(){

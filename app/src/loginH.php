@@ -13,7 +13,7 @@
 			auth_toke = JSON.parse(this.responseText).auth_token;
 
                     	console.log(this.responseText);    // returns JSON object
-                    	console.log("user_id = "+user_id + auth_token);  // user_id = 8 
+                    	console.log("user_id = "+user_id + auth_toke);  // user_id = 8 
 				
 			
 			window.location.href = "https://myapp.bewitch58.hasura-app.io/uhome.php";
