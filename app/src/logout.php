@@ -5,7 +5,7 @@
 
 <script>
 var auth_toke = "; "+document.cookie ;
-auth_toke = auth_toke.split("; authio=");
+auth_toke = auth_toke.split("; dinoisses=");
 if(auth_toke.length==2)
  auth_toke=auth_toke.pop().split(";").shift();
 
@@ -24,7 +24,7 @@ request.onreadystatechange= function(){
 request.open('GET',"https://auth.bewitch58.hasura-app.io/user/logout", true);
 //request.withCredentials=true;
 
-request.setRequestHeader('Authorization','Bearer '+auth_toke);
+//request.setRequestHeader('Authorization','Bearer '+auth_toke);
 console.log('Bearer '+auth_toke);
 request.send(null);
 

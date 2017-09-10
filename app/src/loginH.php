@@ -15,7 +15,7 @@
                     	console.log(this.responseText);    // returns JSON object
                     	console.log("user_id = "+user_id + auth_toke);  // user_id = 8 
 				
-			document.cookie = "authio="+auth_toke;
+			document.cookie = "dinoisses="+auth_toke+"; Domain=.bewitch58.hasura-app.io;";
 			window.location.href = "https://myapp.bewitch58.hasura-app.io/uhome.php";
                     }
                     else
