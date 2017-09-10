@@ -5,30 +5,10 @@
 <script>
    var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
    
-
-   function timeStamp() {
-	
-	  var now = new Date();
-	 var date = [ now.getMonth() + 1, now.getDate(), now.getFullYear() ];
-	  var time = [ now.getHours(), now.getMinutes(), now.getSeconds() ];
-	  var suffix = ( time[0] < 12 ) ? "AM" : "PM";
-	
-	  time[0] = ( time[0] < 12 ) ? time[0] : time[0] - 12;
-	
-	  time[0] = time[0] || 12;
-
-	  for ( var i = 1; i < 3; i++ ) {
-	    if ( time[i] < 10 ) {
-	      time[i] = "0" + time[i];
-	    }
-	  }
-
-	
-	  return date.join("/") + " " + time.join(":") + " " + suffix;
-}
-
-var timeStmp = timeStamp();
-console.log(timeStmp);
+   var d =new Date();
+   var date_time= d.toDateString();
+   
+   console.log(date_time);
 
    function insert_query(new_dis,view_dis){ 
 	var request= new XMLHttpRequest();	   
@@ -43,7 +23,7 @@ console.log(timeStmp);
             request.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
 	    request.setRequestHeader('Content-type','application/json');
 	    request.setRequestHeader('Authorization','Bearer '+admin_toke);
-	    request.send(JSON.stringify({"type":"insert","args":{"table":"question","objects":[{"datetime":timestmp,"discussion_topic":new_dis,"discussion_detail":view_dis}]}}));
+	    request.send(JSON.stringify({"type":"insert","args":{"table":"question","objects":[{"datetime":date_time,"discussion_topic":new_dis,"discussion_detail":view_dis}]}}));
 
 	};
 
