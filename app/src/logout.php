@@ -1,5 +1,5 @@
 <?php require("header.php");
-session_start();
+
 $session_value=(isset($_SESSION['uid']))?$_SESSION['uid']:'adskjfh';
 echo $session_value;
 ?>
