@@ -13,8 +13,6 @@
 		<form action="/forum.php">
 		  New DISCUSSION : <br>
 		  <input type="text" name="firstname" >
-		  <br>
-		  <br>
 		  <br>	
 		   <br>VIEWS : <br>
 		  <input type="text" name="lastname"  >
