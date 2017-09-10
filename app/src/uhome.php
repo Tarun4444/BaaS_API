@@ -14,7 +14,9 @@
 		  New DISCUSSION : <br>
 		  <input type="text" name="firstname" >
 		  <br>
-		  VIEWS : <br>
+		  <br>
+		  <br>	
+		   <br>VIEWS : <br>
 		  <input type="text" name="lastname"  >
 		  <br><br>
 		  <input type="submit" value="Submit">
