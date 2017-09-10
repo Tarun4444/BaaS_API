@@ -25,6 +25,24 @@
                console.log(this.responseText);  // returns Arrray of Objects
                orderedQuestions=JSON.parse(this.responseText);
                console.log(orderedQuestions);
+
+		var employees = $.parseJSON( txt ).orderedQuestions;
+		var $table = $( "<table></table>" );
+
+		for ( var i = 0; i < employees.length; i++ ) {
+			var emp = employees[i];
+			var $line = $( "<tr></tr>" );
+				$line.append( $( "<td></td>" ).html( emp.discussion_id ) );
+				$line.append( $( "<td></td>" ).html( emp.discussion_topic ) );
+				$line.append( $( "<td></td>" ).html( emp.discussion_detail ) );					
+				$table.append( $line );
+		}
+
+		$table.appendTo( document.body );
+
+		// if you want to insert this table in a div with id attribute 
+		// set as "myDiv", you can do this:
+		//$table.appendTo( $( "#myDiv" ) );
              }
 	}
     }  
