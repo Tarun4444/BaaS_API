@@ -28,7 +28,7 @@
     }  
     request.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
     request.setRequestHeader('Content-type','application/json');
-    request.setRequestHeader('Authorization','Bearer '+auth_toke);
+    request.setRequestHeader('Authorization','Bearer '+ a66tjvabxo6w6mojba4dd4ngat22jv9p);
     request.send(JSON.stringify({"type":"select","args":{"table":"question","columns":["*"]}}));
 };
 
