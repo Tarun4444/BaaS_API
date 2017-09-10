@@ -26,7 +26,7 @@
                orderedQuestions=JSON.parse(this.responseText);
                console.log(orderedQuestions);
 
-		var employees = JSON.parse( txt ).orderedQuestions;
+		var employees = JSON.parse( txt ).(this.responseText);
 		var $table = $( "<table></table>" );
 
 		for ( var i = 0; i < employees.length; i++ ) {
