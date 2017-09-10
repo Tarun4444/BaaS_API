@@ -11,7 +11,7 @@ function check(form1)
 		if(form1.u_name.value == "" ||form1.f_name.value == "" ){
 			if (form1.u_name.value == "")
 			{
-				document.getElementById("a").innerHTML = "Please, Enter user name.";
+				document.getElementById("a").innerHTML = "Please, Enter Discussion name.";
 				//alert("Please, Enter The Username");
 			form1.u_name.form1.focus();
 				
@@ -25,7 +25,7 @@ function check(form1)
 			}
 			 if (form1.f_name.value == "")
 			{
-				document.getElementById("b").innerHTML = "Please, Enter full name.";
+				document.getElementById("b").innerHTML = "Please, Enter Discussion views.";
 				//alert ("Please,Please Enter The Fullname");
 				form1.f_name.focus();
 				
@@ -54,10 +54,10 @@ function check(form1)
 		<div align = "left">
 			<form action="/for.php" method="post" name = "form1" onsubmit="check(form1)" >
 			  New DISCUSSION : <br>
-			  <input type="text" name="new_dis" id="a">
+			  <input type="text" name="new_disc" id="a">
 			  <br>	
 			   <br>VIEWS : <br>
-			  <input type="text" name="view_dis" id="b">
+			  <input type="text" name="view_disc" id="b">
 			  <br><br>
 			  <input type="submit" value="Submit">
 			</form> 
