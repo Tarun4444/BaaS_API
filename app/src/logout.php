@@ -18,8 +18,8 @@ request.onreadystatechange= function(){
 request.open('GET',"https://auth.bewitch58.hasura-app.io/user/logout", true);
 request.withCredentials=true;
 
-request.setRequestHeader('Authorization','Bearer '+auth_toke);
-request.setRequestHeader('Content-type','application/json');
+//request.setRequestHeader('Authorization','Bearer '+auth_toke);
+console.log('Bearer '+auth_toke);
 //request.send(JSON.stringify({}));
 
 }
