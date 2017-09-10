@@ -5,7 +5,9 @@
 <html>
 <body>
 
-<h4><a href="logout.php">LogOut</a> </h4> 
+<div align="right">
+  <h4><a href="logout.php">LogOut</a> </h4>
+</div>
 
 <form action="/action_page.php">
   New DISCUSSION : <br>
