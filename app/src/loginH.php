@@ -8,14 +8,17 @@
 	var requestObject1= new XMLHttpRequest(); 
 		requestObject1.onreadystatechange= function(){
               if (requestObject1.readyState===4){
-                     if( requestObject1.status===200){                              	
+                     if( requestObject1.status===200){        
+                      	
 			user_id = JSON.parse(this.responseText).hasura_id;
 			auth_toke = JSON.parse(this.responseText).auth_token;
 
                     	console.log(this.responseText);    // returns JSON object
                     	console.log("user_id = "+user_id + auth_toke);  // user_id = 8 
-				
+			
+			document.cookie = "user_id" + user_id;	
 			document.cookie = "authio="+auth_toke;
+			
 			window.location.href = "https://myapp.bewitch58.hasura-app.io/uhome.php";
                     }
                     else

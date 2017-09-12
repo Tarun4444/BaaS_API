@@ -3,6 +3,13 @@
 ?>
     
 <script>
+  	var u_id = "; "+document.cookie ;
+	//var poop=u_id.search("authio");
+		u_id = u_id.split("; user_id=");
+	if(u_id.length==2)
+    		u_id=u_id.pop().split(";").shift(); 
+	console.log(u_id);
+
    var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
    
    var d =new Date();
@@ -23,7 +30,7 @@
             request.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
 	    request.setRequestHeader('Content-type','application/json');
 	    request.setRequestHeader('Authorization','Bearer '+admin_toke);
-	    request.send(JSON.stringify({"type":"insert","args":{"table":"question","objects":[{"datetime":date_time,"discussion_topic":new_dis,"discussion_detail":view_dis}]}}));
+	    request.send(JSON.stringify({"type":"insert","args":{"table":"question","objects":[{"posted_by_autor_id":u_id,"datetime":date_time,"discussion_topic":new_dis,"discussion_detail":view_dis}]}}));
 
 	};
 

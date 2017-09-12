@@ -56,11 +56,10 @@ function check(form1)
 			  New DISCUSSION : <br>
 			  <input type="text" name="new_disc" id="a">
 			  <br>	
-			   <br>VIEWS : <br>
-			  <input type="text" name="view_disc" id="b">
-			  <br><br>
+			  <br>VIEWS : <br>
 			  <input type="submit" value="Submit">
 			</form> 
+			 <textarea name="comment" name="view_disc" form="form1"></textarea>
 		</div>
 	</div>
   </body>
