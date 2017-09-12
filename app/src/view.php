@@ -7,7 +7,7 @@
     		u_id=u_id.pop().split(";").shift(); 
 	var uu_id = parseInt(u_id) ;
 	console.log(uu_id);
- 
+  var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
  function view_query(d_vie){
  	
     var request= new XMLHttpRequest();
