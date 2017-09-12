@@ -95,8 +95,8 @@ answer_query(discussion_id);
 
 <form action="view.php">
   Post your views:<br>
-  <input type="text" name="firstname" value="">
-  <br>
+  <input type="text" name="d_v" value="">
+  <br><br>
   <input type="submit" value="Submit">
 </form> 
 
