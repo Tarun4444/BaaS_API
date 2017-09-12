@@ -3,7 +3,7 @@
 ?>
 
 
-<form action="view.php?d_id="+<?php echo "$_GET['d_id'] "?>>
+<form action="view.php">
   Post your views:<br><br>
   <input type="text" name="d_v">
   <br><br>
