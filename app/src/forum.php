@@ -23,6 +23,9 @@
                //console.log(this.responseText);  // returns Arrray of Objects
                orderedQuestions=JSON.parse(this.responseText);
 	       order_Question_id=JSON.parse(this.responseText).discussion_id;
+
+	       document.cookie="user_id=" + order_Question_id ;		
+
 	       var employee = JSON.stringify(orderedQuestions);
               // console.log(employee);
 		

@@ -11,6 +11,8 @@
  
 	  var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
 	  var discussion_id = '<?= $_GET['d_id']?>' ;
+		
+	
 
 	  function answer_query(discussion_id){ 
 

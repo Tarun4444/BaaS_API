@@ -1,9 +1,15 @@
 <script>
 
  var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
- //var dd_id = '<?= $_GET['d_id']?>' ;
+// var dd_id = '<?= $_GET['d_id']?>' ;
 
-console.log(dd_id);	
+ var dd_id = "; "+document.cookie ;
+	//var poop=auth_toke.search("authio");
+		dd_id = dd_id.split("; order_Question_id=");
+	if(dd_id.length==2)
+    		dd_id=dd_id.pop().split(";").shift(); 
+    	//console.log(auth_toke);
+	console.log(dd_id);	
  
  function view_query(d_view){ 	
     var request= new XMLHttpRequest();
@@ -15,7 +21,7 @@ console.log(dd_id);
          if(request.status===200) 
          {
  	   console.log("discussioned");
-	   window.location.href = "https://myapp.bewitch58.hasura-app.io/subtopic.php"; //?d_id="+dd_id;
+	   window.location.href = "https://myapp.bewitch58.hasura-app.io/subtopic.php?d_id="+dd_id;
          }
      }               
    
@@ -23,7 +29,7 @@ console.log(dd_id);
    	    request.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
 	    request.setRequestHeader('Content-type','application/json');
 	    request.setRequestHeader('Authorization','Bearer '+admin_toke);
-	    request.send(JSON.stringify({"type":"insert","args":{"table":"answer","objects":[{"answer_detail":d_view,"refer_discussion_id":dd_id}]}}));
+	    request.send(JSON.stringify({"type":"insert","args":{"table":"answer","objects":[{"answer_detail":d_view,"refer_discussion_id": dd_id }]}}));
 
 }
 
