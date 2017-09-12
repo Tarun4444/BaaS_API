@@ -5,7 +5,7 @@
 
  var dd_id = "; "+document.cookie ;
 	//var poop=auth_toke.search("authio");
-		dd_id = dd_id.split("; order_Question_id=");
+		dd_id = dd_id.split("; question_id=");
 	if(dd_id.length==2)
     		dd_id=dd_id.pop().split(";").shift(); 
     	//console.log(auth_toke);
