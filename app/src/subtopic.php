@@ -1,9 +1,25 @@
 <?php 
  require("header.php");
 ?>
-<script type="text/javascript">
 
- window.onload=function(){ 
+
+<html>
+<body>
+
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+<script type="text/javascript">
+ 
 	  var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
 	  var discussion_id = '<?= $_GET['d_id']?>' ;
 
@@ -89,9 +105,11 @@
 
 }
 answer_query(discussion_id);
-};
+
 </script>
 
-<?php 
- require("footer.php");
-?>
+
+</body>
+</html>
+
+

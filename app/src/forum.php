@@ -2,8 +2,6 @@
  require("header.php");
 ?>
 
-<script>
-
  window.onload=function(){ 
 
         var auth_toke = "; "+document.cookie ;
