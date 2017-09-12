@@ -1,15 +1,17 @@
 <?php 
  require("header.php");
-
-<form action="view.php">
-  Post your views:<br><br>
-  <input type="text" name="d_v">
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
-
 ?>
+
 <script type="text/javascript">
+	
+	
+	<form action="view.php">
+	  Post your views:<br><br>
+	  <input type="text" name="d_v">
+	  <br><br>
+	  <input type="submit" value="Submit">
+	</form> 
+
  
 	  var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
 	  var discussion_id = '<?= $_GET['d_id']?>' ;
