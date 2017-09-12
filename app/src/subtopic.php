@@ -36,7 +36,7 @@
 			var lastNameCell = row.insertCell(-1);
 			  lastNameCell.appendChild(document.createTextNode(employs[i].discussion_detail));
 			}
-			document.getElementById("poop").appendChild(tabl);
+			document.body.appendChild(tabl);
 		
 	    }
 	}
@@ -93,13 +93,10 @@ answer_query(discussion_id);
 
 </script>
 
-<form action="/action_page.php">
-  First name:<br>
-  <input type="text" name="firstname" value="Mickey">
+<form action="view.php">
+  Post your views:<br>
+  <input type="text" name="firstname" value="">
   <br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse">
-  <br><br>
   <input type="submit" value="Submit">
 </form> 
 
