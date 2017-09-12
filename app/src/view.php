@@ -1,9 +1,6 @@
 <script>
- 
- var dd_id = '<?= $_POST['d_id']?>' ;
-
  var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
- function view_query(d_vie){
+ function view_query(d_view){
  	
     var request= new XMLHttpRequest();
    
@@ -22,7 +19,7 @@
    	    request.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
 	    request.setRequestHeader('Content-type','application/json');
 	    request.setRequestHeader('Authorization','Bearer '+admin_toke);
-	    request.send(JSON.stringify({"type":"insert","args":{"table":"answer","objects":[{"answer_detail":d_vie}]}}));
+	    request.send(JSON.stringify({"type":"insert","args":{"table":"answer","objects":[{"answer_detail":d_view}]}}));
 
 }
 

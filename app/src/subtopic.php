@@ -90,7 +90,7 @@
             request.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
 	    request.setRequestHeader('Content-type','application/json');
 	    request.setRequestHeader('Authorization','Bearer '+admin_toke);
-	    request.send(JSON.stringify({"type":"select","args":{"table":"answer","columns":["*"],"where":			{"refer_discussion_id":discussion_id}}}));
+	    request.send(JSON.stringify({"type":"select","args":{"table":"answer","columns":["*"],"where":{"refer_discussion_id":discussion_id}}}));
 
 }
 answer_query(discussion_id);
