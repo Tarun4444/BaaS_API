@@ -10,7 +10,9 @@
     		dd_id=dd_id.pop().split(";").shift(); 
     	//console.log(auth_toke);
 	console.log(dd_id);	
- 
+
+ document.cookie = "question_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; 
+
  function view_query(d_view){ 	
     var request= new XMLHttpRequest();
    
@@ -21,7 +23,7 @@
          if(request.status===200) 
          {
  	   console.log("discussioned");
-	   window.location.href = "https://myapp.bewitch58.hasura-app.io/subtopic.php?d_id="+dd_id;
+	   window.location.href = "https://myapp.bewitch58.hasura-app.io/subtopic.php?d_id="+dd_id;	
          }
      }               
    
@@ -34,7 +36,9 @@
 }
 
 var d_view = '<?= $_POST['d_v']?>' ;
+
 console.log(d_view);
+
 view_query(d_view);
 
 </script> 
