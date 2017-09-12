@@ -17,7 +17,7 @@
                //console.log(this.responseText);  // returns Arrray of Objects
                orderedanswers=JSON.parse(this.responseText);
 	       order_answer_id=JSON.parse(this.responseText).id;
-	       var employee = JSON.stringify(orderedQuestions);
+	       var employee = JSON.stringify(orderedanswers);
               // console.log(employee);
 		
 		var employees = JSON.parse(employee);
