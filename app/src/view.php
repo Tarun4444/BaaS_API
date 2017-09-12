@@ -1,13 +1,8 @@
 <script>
-  
- var u_id = "; "+document.cookie ;
-	//var poop=u_id.search("authio");
-	u_id = u_id.split("; user_id=");
-	if(u_id.length==2)
-    		u_id=u_id.pop().split(";").shift(); 
-	var uu_id = parseInt(u_id) ;
-	console.log(uu_id);
-  var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
+ 
+ var d_id = '<?= $_POST['d_id']?>' ;
+
+ var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
  function view_query(d_vie){
  	
     var request= new XMLHttpRequest();
@@ -19,7 +14,7 @@
          if(request.status===200) 
          {
  	   console.log("discussioned");
-	   window.location.href = "https://myapp.bewitch58.hasura-app.io/subtopic.php?d_id="+uu_id;
+	   window.location.href = "https://myapp.bewitch58.hasura-app.io/subtopic.php?d_id="+d_id;
          }
      }               
    
