@@ -1,7 +1,9 @@
 <script>
+
  var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
- function view_query(d_view){
- 	
+ var dd_id = '<?= $_GET['d_id']?>' ;
+
+ function view_query(d_view){ 	
     var request= new XMLHttpRequest();
    
     request.onreadystatechange= function(){
@@ -11,7 +13,7 @@
          if(request.status===200) 
          {
  	   console.log("discussioned");
-	   //window.location.href = "https://myapp.bewitch58.hasura-app.io/subtopic.php?dd_id="+d_id;
+	   window.location.href = "https://myapp.bewitch58.hasura-app.io/subtopic.php?d_id="+dd_id;
          }
      }               
    
@@ -19,7 +21,7 @@
    	    request.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
 	    request.setRequestHeader('Content-type','application/json');
 	    request.setRequestHeader('Authorization','Bearer '+admin_toke);
-	    request.send(JSON.stringify({"type":"insert","args":{"table":"answer","objects":[{"answer_detail":d_view}]}}));
+	    request.send(JSON.stringify({"type":"insert","args":{"table":"answer","objects":[{"answer_detail":d_view,"refer_discussion_id":dd_id}]}}));
 
 }
 
