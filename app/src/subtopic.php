@@ -2,7 +2,6 @@
  require("header.php");
 ?>
 
-</script>
 
 <form action="view.php">
   Post your views:<br><br>
@@ -99,3 +98,6 @@
 
 }
 answer_query(discussion_id);
+
+</script>
+
