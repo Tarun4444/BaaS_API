@@ -13,6 +13,7 @@
 	  var discussion_id = '<?= $_GET['d_id']?>' ;
 		
 	 document.cookie="question_id=" + discussion_id ;
+	console.log(discussion_id);	 
 
 	  function answer_query(discussion_id){ 
 
