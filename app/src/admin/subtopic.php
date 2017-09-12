@@ -1,27 +1,53 @@
 <?php session_start();
  require("header.php");
-require("checkUser.php");?>
-<script type="text/javascript">
-	document.getElementById("amanage").className="active";
-</script>
-
-
-<h2><a href="sinsert.php">Insert Subtopic</a></h2>
-	<?php 
-		$sql="SELECT subtopic_id, subtopic_name, subtopic_Description, s_status, topic.topic_id, topic_name from subtopic, topic where topic.topic_id = subtopic.topic_id";
-		$rows=ExecuteQuery($sql);
-		
-		echo "<table border='1'>";
-		echo "<strong><tr><th>Number</th><th>Subtopic Name</th><th>Subtopic Description</th><th>S Status</th><th>Topic Name</th><th>Edit</th><th>Delete</th></tr> </strong>";
-		
-		while($name_row=mysql_fetch_array($rows))
-		{
-			echo "<tr>";
-			echo "<td>$name_row[subtopic_id]</td><td>$name_row[subtopic_name]</td><td>$name_row[subtopic_Description]</td><td>$name_row[s_status]</td><td>$name_row[topic_name]</td><td><a href='sedit.php?id=".$name_row[0]."'><img src='../res/images/edit.jpg'  class='imagedel'/></a></td><td><a href='sdelete.php?id=".$name_row[0]."'><img src='../res/images/delete.jpg'  class='imagedel'/></a></td>";
-			}
-		
-		echo "</table>";
 ?>
+<script type="text/javascript">
 
+ window.onload=function(){ 
+	  var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
+	  var discussion_id = '<?= $_GET['d_id']?>' ;
+
+	  function answer_query(discussion_id){ 
+	  var request= new XMLHttpRequest();	   
+            request.onreadystatechange = function () {
+        
+          if (request.readyState === XMLHttpRequest.DONE) {
+            if (request.status === 200) {
+               
+               //console.log(this.responseText);  // returns Arrray of Objects
+               orderedanswers=JSON.parse(this.responseText);
+	       order_answer_id=JSON.parse(this.responseText).id;
+	       var employee = JSON.stringify(orderedQuestions);
+              // console.log(employee);
+		
+		var employees = JSON.parse(employee);
+		//console.log(employees);
+
+		var table = document.createElement("table");
+		for (var i = 0; i < employees.length; i++) {
+			  var row = table.insertRow(-1);
+			  //var firstNameCell = row.insertCell(-1);
+			  //var ii = document.createElement("a");
+			//ii.setAttribute("href","subtopic.php?d_id="+employees[i].discussion_id);
+			//ii.appendChild(document.createTextNode(employees[i].discussion_topic));
+			//firstNameCell.appendChild(document.createTextNode(employees[i].discussion_detail));
+			var lastNameCell = row.insertCell(-1);
+			  lastNameCell.appendChild(document.createTextNode(employees[i].answer_detail));
+			}
+			document.body.appendChild(table);
+		
+	    }
+	}
+    }  
+   
+            request.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
+	    request.setRequestHeader('Content-type','application/json');
+	    request.setRequestHeader('Authorization','Bearer '+admin_toke);
+	    request.send(JSON.stringify({"type":"select","args":{"table":"answer","columns":["*"],"where":			{"refer_discussion_id":discussion_id}}}));
+
+}
+answer_query(discussion_id);
+};
+</script>
 
 <?php require("footer.php")?>

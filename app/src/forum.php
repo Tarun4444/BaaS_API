@@ -24,7 +24,7 @@
                
                //console.log(this.responseText);  // returns Arrray of Objects
                orderedQuestions=JSON.parse(this.responseText);
-	       
+	       order_Question_id=JSON.parse(this.responseText).discussion_id;
 	       var employee = JSON.stringify(orderedQuestions);
               // console.log(employee);
 		
@@ -33,18 +33,16 @@
 
 		var table = document.createElement("table");
 		for (var i = 0; i < employees.length; i++) {
-		  var row = table.insertRow(-1);
-		  var firstNameCell = row.insertCell(-1);
-		  //firstNameCell.appendChild(document.createTextNode(employees[i].discussion_topic));
-//firstNameCell.appendChild(document.createElement("a").setAttribute("href","dsf")employees[i].discussion_topic));		  
-var ii = document.createElement("a");
-ii.setAttribute("href","sscv");
-ii.appendChild(document.createTextNode(employees[i].discussion_topic));
-firstNameCell.appendChild(ii);
-var lastNameCell = row.insertCell(-1);
-		  lastNameCell.appendChild(document.createTextNode(employees[i].discussion_detail));
-		}
-		document.body.appendChild(table);
+			  var row = table.insertRow(-1);
+			  var firstNameCell = row.insertCell(-1);
+			  var ii = document.createElement("a");
+			ii.setAttribute("href","subtopic.php?d_id="+employees[i].discussion_id);
+			ii.appendChild(document.createTextNode(employees[i].discussion_topic));
+			firstNameCell.appendChild(ii);
+			var lastNameCell = row.insertCell(-1);
+			  lastNameCell.appendChild(document.createTextNode(employees[i].discussion_detail));
+			}
+			document.body.appendChild(table);
 		
 	    }
 	}
