@@ -18,7 +18,7 @@
                //console.log(this.responseText);  // returns Arrray of Objects
                ordered_d=JSON.parse(this.responseText);
 	       //order_d_id=JSON.parse(this.responseText).id;
-	       var employ = JSON.stringify(orderedanswers);
+	       var employ = JSON.stringify(ordered_d);
               // console.log(employee);
 		
 		var employs = JSON.parse(employ);
@@ -31,9 +31,9 @@
 			  //var ii = document.createElement("a");
 			//ii.setAttribute("href","subtopic.php?d_id="+employees[i].discussion_id);
 			//ii.appendChild(document.createTextNode(employees[i].discussion_topic));
-			firstNameCell.appendChild(document.createTextNode(employees[i].discussion_topic));
+			firstNameCell.appendChild(document.createTextNode(employs[i].discussion_topic));
 			var lastNameCell = row.insertCell(-1);
-			  lastNameCell.appendChild(document.createTextNode(employees[i].discussion_detail));
+			  lastNameCell.appendChild(document.createTextNode(employs[i].discussion_detail));
 			}
 			document.body.appendChild(tabl);
 		
