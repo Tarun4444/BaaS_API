@@ -1,8 +1,7 @@
 <?php 
  require("header.php");
- $d_id=$_GET['d_id'];
 ?>
-<form action="view.php?d_id="+<?php echo $d_id;?> method="post">
+<form action="view.php?d_id="+<?php echo $_GET['d_id'];?> method="post">
 	 Post your views:<br><br>
          <input type="text" name="d_v"><br><br><input type="submit" value="Submit">
 </form> 

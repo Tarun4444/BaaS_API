@@ -3,6 +3,8 @@
  var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
  var dd_id = '<?= $_GET['d_id']?>' ;
 
+console.log(dd_id);	
+ 
  function view_query(d_view){ 	
     var request= new XMLHttpRequest();
    
