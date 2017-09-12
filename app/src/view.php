@@ -1,6 +1,6 @@
 <script>
  
- var d_id = '<?= $_POST['d_id']?>' ;
+ var dd_id = '<?= $_POST['d_id']?>' ;
 
  var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
  function view_query(d_vie){
@@ -14,7 +14,7 @@
          if(request.status===200) 
          {
  	   console.log("discussioned");
-	   window.location.href = "https://myapp.bewitch58.hasura-app.io/subtopic.php?d_id="+d_id;
+	  // window.location.href = "https://myapp.bewitch58.hasura-app.io/subtopic.php?dd_id="+d_id;
          }
      }               
    
