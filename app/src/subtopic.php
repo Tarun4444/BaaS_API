@@ -41,10 +41,11 @@
 	}
     }  
    
-            request_d.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
-	    request_d.setRequestHeader('Content-type','application/json');
-	    request_d.setRequestHeader('Authorization','Bearer '+admin_toke);
-	    request_d.send(JSON.stringify({"type":"select","args":{"table":"answer","columns":["*"],"where":			{"refer_discussion_id":discussion_id}}}));
+            
+    request_d.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
+    request_d.setRequestHeader('Content-type','application/json');
+    request_d.setRequestHeader('Authorization','Bearer '+admin_toke);
+    request_d.send(JSON.stringify({"type":"select","args":{"table":"question","columns":["*"],"where":{"discussion_id":discussion_id}}}));
 
 
 
