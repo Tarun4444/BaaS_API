@@ -8,6 +8,7 @@ auth_toke = auth_toke.split("; authio=");
 if(auth_toke.length==2)
  auth_toke=auth_toke.pop().split(";").shift();
 document.cookie = "authio=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+document.cookie = "user_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
 console.log(auth_toke);
 
