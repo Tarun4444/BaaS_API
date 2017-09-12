@@ -2,6 +2,15 @@
  require("header.php");
 ?>
 
+</script>
+
+<form action="view.php">
+  Post your views:<br><br>
+  <input type="text" name="d_v">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
 
 <script type="text/javascript">
  
@@ -90,18 +99,3 @@
 
 }
 answer_query(discussion_id);
-
-</script>
-
-<form action="view.php">
-  Post your views:<br>
-  <input type="text" name="d_v" value="">
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
-
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
-
-
-

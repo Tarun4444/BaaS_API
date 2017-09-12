@@ -24,7 +24,7 @@
      }               
    
    }         
-   request.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
+   	    request.open('POST', " https://data.bewitch58.hasura-app.io/v1/query ", true);
 	    request.setRequestHeader('Content-type','application/json');
 	    request.setRequestHeader('Authorization','Bearer '+admin_toke);
 	    request.send(JSON.stringify({"type":"insert","args":{"table":"answer","objects":[{"answer_detail":d_view}]}}));
@@ -32,7 +32,7 @@
 }
 
 var d_view = '<?= $_POST['d_v']?>' ;
-
+console.log(d_v);
 view_query(d_v);
 
 </script> 
