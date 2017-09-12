@@ -35,7 +35,7 @@
 			var lastNameCell = row.insertCell(-1);
 			  lastNameCell.appendChild(document.createTextNode(employs[i].discussion_detail));
 			}
-			document.body.appendChild(tabl);
+			document.getElementById("art-main").appendChild(tabl);
 		
 	    }
 	}

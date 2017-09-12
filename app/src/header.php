@@ -57,3 +57,4 @@
                     <div class="art-content">
                     </div>
                 </div>
+</div></div>
