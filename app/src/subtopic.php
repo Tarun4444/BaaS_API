@@ -1,7 +1,5 @@
 <?php 
  require("header.php");
-?>
-
 
 <form action="view.php">
   Post your views:<br><br>
@@ -10,7 +8,7 @@
   <input type="submit" value="Submit">
 </form> 
 
-
+?>
 <script type="text/javascript">
  
 	  var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
