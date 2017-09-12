@@ -18,6 +18,9 @@
 
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 
+</body>
+</html>
+
 <script type="text/javascript">
  
 	  var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
@@ -107,9 +110,5 @@
 answer_query(discussion_id);
 
 </script>
-
-
-</body>
-</html>
 
 
