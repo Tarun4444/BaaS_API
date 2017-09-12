@@ -57,7 +57,7 @@ function check(form1)
 			  <input type="text" name="new_disc" id="a">
 			  <br>	
 			  <br>VIEWS : <br>
-			 <textarea name="comment" name="view_disc" ></textarea>
+			 <textarea name="view_disc" ></textarea>
 			  <input type="submit" value="Submit">
 			</form> 
 			
