@@ -1,7 +1,7 @@
 <script>
 
  var admin_toke='a66tjvabxo6w6mojba4dd4ngat22jv9p';
- var dd_id = '<?= $_GET['d_id']?>' ;
+ //var dd_id = '<?= $_GET['d_id']?>' ;
 
 console.log(dd_id);	
  
@@ -15,7 +15,7 @@ console.log(dd_id);
          if(request.status===200) 
          {
  	   console.log("discussioned");
-	   window.location.href = "https://myapp.bewitch58.hasura-app.io/subtopic.php?d_id="+dd_id;
+	   window.location.href = "https://myapp.bewitch58.hasura-app.io/subtopic.php"; //?d_id="+dd_id;
          }
      }               
    
