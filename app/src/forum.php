@@ -39,8 +39,8 @@
 //firstNameCell.appendChild(document.createElement("a").setAttribute("href","dsf")employees[i].discussion_topic));		  
 var ii = document.createElement("a");
 ii.setAttribute("href","sscv");
-li.appendChild(document.createTextNode(employees[i].discussion_topic));
-firstNameCell.appendChild(li);
+ii.appendChild(document.createTextNode(employees[i].discussion_topic));
+firstNameCell.appendChild(ii);
 var lastNameCell = row.insertCell(-1);
 		  lastNameCell.appendChild(document.createTextNode(employees[i].discussion_detail));
 		}
