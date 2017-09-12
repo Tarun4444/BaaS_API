@@ -11,7 +11,7 @@
     	//console.log(auth_toke);
 	console.log(dd_id);	
 
- //document.cookie = "question_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; 
+ document.cookie = "question_id=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; 
 
  function view_query(d_view){ 	
     var request= new XMLHttpRequest();
