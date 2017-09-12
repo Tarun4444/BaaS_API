@@ -38,7 +38,7 @@
             
                     </div>
                 </div>
-                <div class="art-nav">
+                <div class="art-nav" id="poop">
                 	<div class="l"></div>
                 	<div class="r"></div>
                 	<ul class="art-menu">
@@ -57,4 +57,3 @@
                     <div class="art-content">
                     </div>
                 </div>
-</div></div>
