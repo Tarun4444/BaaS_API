@@ -36,7 +36,7 @@
 			  var row = table.insertRow(-1);
 			  var firstNameCell = row.insertCell(-1);
 			  var ii = document.createElement("a");
-			ii.setAttribute("href","subtopic.php?d_id="+employees[i].discussion_id);
+			ii.setAttribute("href","admin/subtopic.php?d_id="+employees[i].discussion_id);
 			ii.appendChild(document.createTextNode(employees[i].discussion_topic));
 			firstNameCell.appendChild(ii);
 			var lastNameCell = row.insertCell(-1);
