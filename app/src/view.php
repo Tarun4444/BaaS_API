@@ -11,7 +11,7 @@
          if(request.status===200) 
          {
  	   console.log("discussioned");
-	  // window.location.href = "https://myapp.bewitch58.hasura-app.io/subtopic.php?dd_id="+d_id;
+	   //window.location.href = "https://myapp.bewitch58.hasura-app.io/subtopic.php?dd_id="+d_id;
          }
      }               
    

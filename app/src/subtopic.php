@@ -2,7 +2,7 @@
  require("header.php");
 ?>
 
-<form action="view.php">
+<form action="view.php" method="post">
 	 Post your views:<br><br>
          <input type="text" name="d_v"><br><br><input type="submit" value="Submit">
 </form> 
