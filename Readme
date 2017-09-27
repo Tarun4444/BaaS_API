@@ -1,0 +1,5 @@
+Developed a backend for the project using Hasura BaaS.
+Use Hasura as a Paas to deploy the php code on git.
+Use javascript to develop frontend and Ajax to query server
+
+Further optimizations and designing is required .
