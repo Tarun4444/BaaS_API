@@ -1,4 +1,4 @@
-# A projecct done under Hasura company
+# Internship project done under Hasura company
 
 # Quickstart - Build your own Docker image#
 
